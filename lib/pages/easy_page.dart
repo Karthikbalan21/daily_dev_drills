@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'code_editor.dart';
 
 class EasyQuestionsPage extends StatelessWidget {
   @override
@@ -31,7 +32,7 @@ class EasyQuestionsPage extends StatelessWidget {
             Center(
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.pop(context); // Go back to the Home Page
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => CodeEditorPage(),));
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue,
@@ -41,7 +42,7 @@ class EasyQuestionsPage extends StatelessWidget {
                   ),
                 ),
                 child: const Text(
-                  "Back to Home",
+                  "Compiler",
                   style: TextStyle(fontSize: 16, color: Colors.white),
                 ),
               ),

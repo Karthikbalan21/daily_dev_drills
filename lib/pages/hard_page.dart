@@ -1,3 +1,4 @@
+import 'package:daily_dev_drills/pages/code_editor.dart';
 import 'package:flutter/material.dart';
 
 class HardQuestionsPage extends StatelessWidget {
@@ -31,7 +32,7 @@ class HardQuestionsPage extends StatelessWidget {
             Center(
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.pop(context); // Go back to the Home Page
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => CodeEditorPage(),));
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue,
@@ -41,7 +42,7 @@ class HardQuestionsPage extends StatelessWidget {
                   ),
                 ),
                 child: const Text(
-                  "Back to Home",
+                  "Complier",
                   style: TextStyle(fontSize: 16, color: Colors.white),
                 ),
               ),

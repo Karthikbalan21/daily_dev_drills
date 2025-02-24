@@ -54,8 +54,8 @@ class HomePage extends StatelessWidget {
               },
             ),
             ListTile(
-              leading: const Icon(Icons.settings),
-              title: const Text('Settings'),
+              leading: const Icon(Icons.bar_chart),
+              title: const Text('Status'),
               onTap: () {
                 Navigator.pop(context); // Handle settings
               },

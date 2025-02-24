@@ -1,3 +1,4 @@
+import 'package:daily_dev_drills/main.dart';
 import 'package:flutter/material.dart';
 import 'package:daily_dev_drills/custom_textfield.dart';
 
@@ -33,6 +34,7 @@ class LoginPage extends StatelessWidget {
               const SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {
+                  testDB();
                   Navigator.pushReplacementNamed(context, '/home'); // Navigate to Home Page
                 },
                 style: ElevatedButton.styleFrom(
